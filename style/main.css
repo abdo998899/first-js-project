@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  background-color: hsl(240, 5%, 91%);
+  display: flex;
+  position: relative;
+  height: 70%;
+  top: 15%;
+  border-radius: 30px;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.qna {
+  width: 50%;
+  position: relative;
+  top: 10%;
+  padding-right: 5%;
+}
+
+.attribution {
+  position: relative;
+
+  margin: auto;
+}
+
+.qna div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 999;
+}
+
+h1 {
+  position: relative;
+  bottom: 7%;
+}
+
+.mid {
+  left: -190px;
+  width: 552px;
+  position: relative;
+  top: 106px;
+}
+
+.bot {
+  width: 797px;
+  left: -280px;
+  position: absolute;
+  bottom: -74px;
+}
+
+.box {
+  left: 190px;
+  position: absolute;
+  top: 419px;
+}
+
+.qna div div {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.qna div p {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s linear;
+}
+
+/* .show {
+  max-height: 20rem !important;
+} */
+
+.qna div div:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.qna div div {
+  color: hsl(238, 29%, 16%);
+}
+
+.arrow {
+  transform: rotatex(180deg);
+}
+
+.qna div div.show ~ p {
+  max-height: 20rem !important;
+}
+
+.qna div div.show i {
+  transform: rotatex(180deg);
+}
+
+i {
+  transition: 0.5s;
+}
+
+.qna div div.show h5 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h5 {
+  transition: 0.5s;
+}
+
+@media (max-width: 1669px) {
+  .box {
+    left: 141px;
+    position: absolute;
+    top: 441px;
+  }
+}
+
+@media (max-width: 1633px) {
+  .box {
+    display: none;
+  }
+}
+
+@media (max-width: 1220px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: visible;
+  }
+  .qna {
+    width: 90%;
+    margin: auto;
+  }
+  .qna div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .mid {
+    position: absolute;
+    top: -158px;
+    width: 421px;
+    left: 20%;
+  }
+
+  .bot {
+    position: absolute;
+    top: -235px;
+    left: 15%;
+    width: 476px;
+  }
+
+  .box {
+    position: absolute;
+    top: -235px;
+    left: 15%;
+    width: 476px;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .mid {
+    position: absolute;
+    top: -60px;
+    width: 300px;
+    left: 20%;
+  }
+  .bot {
+    position: absolute;
+    top: -75px;
+    left: 15%;
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mid {
+    position: absolute;
+    top: -60px;
+    width: 200px;
+    left: 15%;
+  }
+  .bot {
+    position: absolute;
+    top: -75px;
+    left: 10%;
+    width: 200px;
+  }
+}
+
+@media (max-height: 670px) and (max-width: 600px) {
+  .mid {
+    position: absolute;
+    top: -108px;
+    width: 200px;
+    left: 15%;
+  }
+  .bot {
+    position: absolute;
+    top: -108px;
+    left: 10%;
+    width: 200px;
+  }
+}
